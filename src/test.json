@@ -1,0 +1,454 @@
+{
+  "rights": [
+    {
+      "key": "/home",
+      "id": 1,
+      "title": "首页",
+      "address": "/home",
+      "grade": 1,
+      "pagePermission": 1
+    },
+    {
+      "key": "/user-manage2",
+      "id": 10,
+      "title": "用户管理",
+      "address": "/user-manage2",
+      "grade": 1,
+      "pagePermission": 1
+    },
+    {
+      "key": "/user-manage",
+      "id": 2,
+      "title": "权限管理",
+      "address": "/user-manage",
+      "grade": 1,
+      "pagePermission": 1
+    },
+    {
+      "key": "/news-manage",
+      "id": 5,
+      "title": "新闻管理",
+      "address": "/news-manage",
+      "grade": 1,
+      "pagePermission": 1
+    },
+    {
+      "key": "/audit-manage",
+      "id": 6,
+      "title": "审核管理",
+      "address": "/audit-manage",
+      "grade": 1,
+      "pagePermission": 1
+    },
+    {
+      "key": "/publish-manage",
+      "id": 7,
+      "title": "发布管理",
+      "address": "/publish-manage",
+      "grade": 1,
+      "pagePermission": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "时事新闻",
+      "value": "时事新闻"
+    },
+    {
+      "id": 2,
+      "title": "环球经济",
+      "value": "环球经济"
+    },
+    {
+      "id": 3,
+      "title": "科学技术",
+      "value": "科学技术"
+    }
+  ],
+  "children": [
+    {
+      "key": "/user-manage/list",
+      "id": 11,
+      "title": "用户列表",
+      "address": "/user-manage/list",
+      "grade": 2,
+      "rightId": 10,
+      "pagePermission": 1
+    },
+    {
+      "key": "/right-manage/role/list",
+      "id": 3,
+      "title": "角色列表",
+      "address": "/right-manage/role/list",
+      "grade": 2,
+      "rightId": 2,
+      "pagePermission": 1
+    },
+    {
+      "key": "/right-manage/right/list",
+      "id": 4,
+      "title": "权限列表",
+      "address": "/right-manage/right/list",
+      "grade": 2,
+      "rightId": 2,
+      "pagePermission": 1
+    },
+    {
+      "key": "/news-manage/write",
+      "id": 12,
+      "title": "新闻撰写",
+      "address": "/news-manage/write",
+      "grade": 2,
+      "rightId": 5,
+      "pagePermission": 1
+    },
+    {
+      "key": "/news-manage/draft",
+      "id": 13,
+      "title": "草稿箱",
+      "address": "/news-manage/draft",
+      "grade": 2,
+      "rightId": 5,
+      "pagePermission": 1
+    },
+    {
+      "key": "/news-manage/category",
+      "id": 18,
+      "title": "新闻分类",
+      "address": "/news-manage/category",
+      "grade": 2,
+      "rightId": 5,
+      "pagePermission": 1
+    },
+    {
+      "key": "/audit-manage/audit",
+      "id": 14,
+      "title": "审核新闻",
+      "address": "/audit-manage/audit",
+      "grade": 2,
+      "rightId": 6,
+      "pagePermission": 1
+    },
+    {
+      "key": "/audit-manage/list",
+      "id": 17,
+      "title": "审核列表",
+      "address": "/audit-manage/list",
+      "grade": 2,
+      "rightId": 6,
+      "pagePermission": 1
+    },
+    {
+      "key": "/news-manage/preview/:id",
+      "id": 14,
+      "title": "新闻预览",
+      "address": "/news-manage/preview/:id",
+      "grade": 2,
+      "rightId": 6,
+      "routePermission": 1
+    },
+    {
+      "key": "/news-manage/update/:id",
+      "id": 15,
+      "title": "新闻更新",
+      "address": "/news-manage/update/:id",
+      "grade": 2,
+      "rightId": 6,
+      "routePermission": 1
+    },
+    {
+      "key": "/publish-manage/unpublish",
+      "id": 19,
+      "title": "待发布",
+      "address": "/publish-manage/unpublish",
+      "grade": 2,
+      "rightId": 7,
+      "pagePermission": 1
+    },
+    {
+      "key": "/publish-manage/published",
+      "id": 16,
+      "title": "已发布",
+      "address": "/publish-manage/published",
+      "grade": 2,
+      "rightId": 7,
+      "pagePermission": 1
+    },
+    {
+      "key": "/publish-manage/sunset",
+      "id": 20,
+      "title": "已下线",
+      "address": "/publish-manage/sunset",
+      "grade": 2,
+      "rightId": 7,
+      "pagePermission": 1
+    }
+  ],
+  "roles": [
+    {
+      "key": 7,
+      "id": 7,
+      "title": "超级管理员",
+      "rights": [
+        "/user-manage",
+        "/user-manage2",
+        "/user-manage/list",
+        "/right-manage/role/list",
+        "/right-manage/right/setname",
+        "/right-manage/right/setright",
+        "/right-manage/right/list",
+        "/home",
+        "/news-manage",
+        "/news-manage/write",
+        "/news-manage/draft",
+        "/news-manage/category",
+        "/audit-manage",
+        "/audit-manage/audit",
+        "/audit-manage/list",
+        "/news-manage/preview/:id",
+        "/news-manage/update/:id",
+        "/publish-manage",
+        "/publish-manage/unpublish",
+        "/publish-manage/published",
+        "/publish-manage/sunset"
+      ]
+    },
+    {
+      "key": 9,
+      "id": 9,
+      "title": "区域编辑",
+      "rights": [
+        "/home",
+        "/user-manage2",
+        "/user-manage/list"
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": 1,
+      "title": "亚洲",
+      "value": "亚洲"
+    },
+    {
+      "id": 2,
+      "title": "南极",
+      "value": "南极"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "key": 1,
+      "username": "admin",
+      "password": 123456,
+      "roleState": true,
+      "default": true,
+      "region": "",
+      "roleId": 7
+    },
+    {
+      "id": 2,
+      "key": 2,
+      "username": "zhang",
+      "password": 123456,
+      "roleState": true,
+      "default": false,
+      "region": "南极",
+      "roleId": 9
+    },
+    {
+      "id": 3,
+      "key": 3,
+      "username": "zaijian",
+      "password": 123456,
+      "roleState": true,
+      "default": false,
+      "region": "南极",
+      "roleId": 9
+    },
+    {
+      "id": 4,
+      "key": 4,
+      "username": "00",
+      "password": 123456,
+      "roleState": true,
+      "default": false,
+      "region": "",
+      "roleId": 7
+    },
+    {
+      "username": "1",
+      "password": "123",
+      "region": "南极",
+      "roleId": 9,
+      "roleState": true,
+      "default": false,
+      "key": "8865b072-6350-4bd0-874b-0820c956fd54",
+      "id": 5
+    },
+    {
+      "username": "yanghong",
+      "password": "123456",
+      "region": "南极",
+      "roleId": 9,
+      "roleState": true,
+      "default": false,
+      "key": "7147b526-e4f8-4d86-bac4-4ca63114868e",
+      "id": 6
+    }
+  ],
+  "news": [
+    {
+      "title": "已通过待发布",
+      "categoryId": 1,
+      "content": "<span>你好新闻</span>",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 1,
+      "createTime": 16157777,
+      "star": 1000,
+      "view": 2005,
+      "id": 1,
+      "publishTime": 16445151
+    },
+    {
+      "title": "未通过未发布",
+      "categoryId": 3,
+      "content": "<p>1235654321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 0,
+      "publishState": 0,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf420-b130-466d-8226-da692b2402db",
+      "id": 2
+    },
+    {
+      "title": "已通过未发布",
+      "categoryId": 3,
+      "content": "<p>1235654321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 0,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf420-b130-466d-8226-da692b2402da",
+      "id": 3
+    },
+    {
+      "title": "已通过未发布",
+      "categoryId": 3,
+      "content": "<p>1235654321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 0,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf420-b130-466d-8226-da692b2402da",
+      "id": 4
+    },
+    {
+      "title": "未通过未发布",
+      "categoryId": 3,
+      "content": "<p>15654321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 3,
+      "publishState": 0,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf488-b130-466d-8226-da692b2402da",
+      "id": 5
+    },
+    {
+      "title": "已通过已下线",
+      "categoryId": 3,
+      "content": "<p>15656456454321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 3,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf488-b130-466d-8226-da692b2402da",
+      "id": 6
+    },
+    {
+      "title": "审核中未发布",
+      "categoryId": 3,
+      "content": "<p>15656456454321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 1,
+      "publishState": 0,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf488-b130-466d-8226-da692b2402da",
+      "id": 7
+    },
+    {
+      "title": "已通过已发布",
+      "categoryId": 3,
+      "content": "<p>15656456454321</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 2,
+      "createTime": 1652253797343,
+      "star": 0,
+      "view": 0,
+      "key": "32caf488-b130-466d-8226-da692b2402da",
+      "id": 8
+    },
+    {
+      "title": "6.10新闻",
+      "categoryId": 1,
+      "content": "<p>dhahdoaodiahodaoihoaihfoafa</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 3,
+      "publishState": 0,
+      "createTime": 1654790848486,
+      "star": 0,
+      "view": 0,
+      "key": "ce3ea29f-a3c4-41aa-949f-16530087a8ec",
+      "id": 9
+    },
+    {
+      "title": "123",
+      "categoryId": 2,
+      "content": "<p>15454546556654</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 0,
+      "publishState": 0,
+      "createTime": 1654790877620,
+      "star": 0,
+      "view": 0,
+      "key": "6e788e79-1e31-4a05-abdd-f7fe74bd93bb",
+      "id": 10
+    }
+  ]
+}

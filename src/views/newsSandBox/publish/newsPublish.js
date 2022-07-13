@@ -1,8 +1,8 @@
-import { Table, Tag, Button, Modal,Popover, Switch } from 'antd';
-
+import { Table} from 'antd';
+//,Modal
 import React from 'react';
 
-const { confirm } = Modal;
+//const { confirm } = Modal;
 function NewsPublish(props) {
     
     const columns = [

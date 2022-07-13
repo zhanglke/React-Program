@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { notification } from 'antd';
 
 
@@ -7,7 +7,8 @@ function UsePublish(type) {
     const [dataSource,setDataSource] = useState([])
     const {username} = JSON.parse(localStorage.getItem("token"))
     useEffect(()=>{
-        axios.get(`http://localhost:8000/news?author=${username}&publishState=${type}&_expand=category`).then(res=>{
+        //author=${username}&
+        axios.get(`http://localhost:8000/news?publishState=${type}&_expand=category`).then(res=>{
             //console.log(res.data)
             setDataSource(res.data)
         })

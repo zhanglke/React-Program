@@ -13,9 +13,10 @@ function Audit(props) {
             const list = res.data
 
             setDataSource(roleId===7?list:[
-                ...list.filter(item=>item.author===username),
+                //...list.filter(item=>item.author===username),
                 ...list.filter(item=>item.region===region&&item.roleId&&roleObj[item.roleId]==="regionEditor")
             ])
+            
         })
     },[roleId,region,username])
 

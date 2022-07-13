@@ -1,5 +1,5 @@
 //import {createStore} from 'redux';
-import {createStore} from 'react-redux'
+//import {createStore} from 'react-redux'
 
 const Mystate = {
 }

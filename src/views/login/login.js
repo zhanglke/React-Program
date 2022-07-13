@@ -7,11 +7,11 @@ import MyParticles from './particles';
 import axios from 'axios';
 
 
-import store from '../../store';
+//import store from '../../store';
 
 function Login(props) {
 
-    const userData = store.getState()
+    //const userData = store.getState()
     //console.log(state)
 
     var navigate = useNavigate()
@@ -23,7 +23,7 @@ function Login(props) {
                 message.error("用户名或密码不匹配")
             }else{
                 localStorage.setItem("token",JSON.stringify(res.data[0]))
-                var {role:{rights}} = JSON.parse(localStorage.getItem("token"))
+                //var {role:{rights}} = JSON.parse(localStorage.getItem("token"))
                 //console.log(123,rights)
                 //发送给indexRouter
                 //userData = rights
@@ -39,7 +39,7 @@ function Login(props) {
 
     return (
         <div style={{height:"100%"}} > 
-            {/* <MyParticles/> */}
+            <MyParticles/>
             <div className='formContainer'>
                 
                 <div className='loginTitle'>系统</div>

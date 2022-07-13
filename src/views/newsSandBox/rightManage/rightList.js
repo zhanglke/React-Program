@@ -3,6 +3,47 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import {DeleteOutlined,EditOutlined,ExclamationCircleOutlined} from '@ant-design/icons' 
 
+import {store} from '../../../redux/store';
+axios.interceptors.request.use(function (config) {
+    // Do something before request is sent
+    //显示loading
+    //console.log("加载数据")
+    store.dispatch({
+        type:"change_loading",
+        payload:true
+    })
+
+    return config;
+}, function (error) {
+    // Do something with request error
+
+    return Promise.reject(error);
+});
+
+// Add a response interceptor
+axios.interceptors.response.use(function (response) {
+    // Any status code that lie within the range of 2xx cause this function to trigger
+    // Do something with response data
+    //隐藏loading
+    
+    store.dispatch({
+        type:"change_loading",
+        payload:false
+    })
+    return response;
+}, function (error) {
+    // Any status codes that falls outside the range of 2xx cause this function to trigger
+    // Do something with response error
+
+    store.dispatch({
+        type:"change_loading",
+        payload:false
+    })
+    return Promise.reject(error);
+});
+
+
+
 const { confirm } = Modal;
 function RightList(props) {
     const [dataSource,setDataSource] = useState([])

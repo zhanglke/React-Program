@@ -221,7 +221,20 @@
       "rights": [
         "/home",
         "/user-manage2",
-        "/user-manage/list"
+        "/user-manage/list",
+        "/news-manage",
+        "/news-manage/write",
+        "/news-manage/draft",
+        "/news-manage/category",
+        "/audit-manage",
+        "/audit-manage/audit",
+        "/audit-manage/list",
+        "/news-manage/preview/:id",
+        "/news-manage/update/:id",
+        "/publish-manage",
+        "/publish-manage/unpublish",
+        "/publish-manage/published",
+        "/publish-manage/sunset"
       ]
     }
   ],
@@ -308,12 +321,12 @@
       "author": "admin",
       "roleId": 7,
       "auditState": 2,
-      "publishState": 1,
+      "publishState": 2,
       "createTime": 16157777,
       "star": 1000,
-      "view": 2005,
+      "view": null,
       "id": 1,
-      "publishTime": 16445151
+      "publishTime": 1657692056734
     },
     {
       "title": "未通过未发布",
@@ -338,12 +351,13 @@
       "author": "admin",
       "roleId": 7,
       "auditState": 2,
-      "publishState": 0,
+      "publishState": 2,
       "createTime": 1652253797343,
       "star": 0,
       "view": 0,
       "key": "32caf420-b130-466d-8226-da692b2402da",
-      "id": 3
+      "id": 3,
+      "publishTime": 1657692071718
     },
     {
       "title": "已通过未发布",
@@ -353,12 +367,13 @@
       "author": "admin",
       "roleId": 7,
       "auditState": 2,
-      "publishState": 0,
+      "publishState": 2,
       "createTime": 1652253797343,
       "star": 0,
-      "view": 0,
+      "view": null,
       "key": "32caf420-b130-466d-8226-da692b2402da",
-      "id": 4
+      "id": 4,
+      "publishTime": 1657692088054
     },
     {
       "title": "未通过未发布",
@@ -397,13 +412,14 @@
       "region": "全球",
       "author": "admin",
       "roleId": 7,
-      "auditState": 1,
-      "publishState": 0,
+      "auditState": 2,
+      "publishState": 2,
       "createTime": 1652253797343,
       "star": 0,
       "view": 0,
       "key": "32caf488-b130-466d-8226-da692b2402da",
-      "id": 7
+      "id": 7,
+      "publishTime": 1657692145247
     },
     {
       "title": "已通过已发布",
@@ -449,6 +465,86 @@
       "view": 0,
       "key": "6e788e79-1e31-4a05-abdd-f7fe74bd93bb",
       "id": 10
+    },
+    {
+      "title": "44444",
+      "categoryId": 1,
+      "content": "<p>nihao&nbsp;</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 2,
+      "createTime": 1657692041126,
+      "star": 9,
+      "view": 51,
+      "key": "2f70afbc-3a48-455b-95c6-02acf151bb15",
+      "id": 11,
+      "publishTime": 1657692124460
+    },
+    {
+      "title": "999999",
+      "categoryId": 2,
+      "content": "<p>9999999999</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 2,
+      "createTime": 1657692103126,
+      "star": 0,
+      "view": 0,
+      "key": "75ae9658-e089-4e9e-a55c-e3c476b5b44b",
+      "id": 12,
+      "publishTime": 1657692131751
+    },
+    {
+      "title": "admin",
+      "categoryId": 2,
+      "content": "<p>admin</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 7,
+      "auditState": 2,
+      "publishState": 2,
+      "createTime": 1657695251344,
+      "star": 0,
+      "view": 0,
+      "key": "a9da4db6-f41b-469d-b6f2-aff31c403674",
+      "id": 13,
+      "publishTime": 1657695271246
+    },
+    {
+      "title": "yang",
+      "categoryId": 2,
+      "content": "<p>0</p>\n",
+      "region": "南极",
+      "author": "yanghong",
+      "roleId": 9,
+      "auditState": 2,
+      "publishState": 2,
+      "createTime": 1657696112909,
+      "star": 0,
+      "view": 0,
+      "key": "ea96e216-e864-4bbb-9f16-673ba549c39d",
+      "id": 14,
+      "publishTime": 1657696336894
+    },
+    {
+      "title": "lll",
+      "categoryId": 2,
+      "content": "<p>123</p>\n",
+      "region": "南极",
+      "author": "yanghong",
+      "roleId": 9,
+      "auditState": 2,
+      "publishState": 2,
+      "createTime": 1657696365415,
+      "star": 0,
+      "view": 0,
+      "key": "62c0338e-c296-4805-bd67-75d7908eb77c",
+      "id": 15,
+      "publishTime": 1657696548998
     }
   ]
 }

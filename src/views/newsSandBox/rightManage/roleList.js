@@ -34,7 +34,7 @@ function RoleList(props) {
             id:"ID",
             dataIndex:'id',
             key:'id',
-            render:(title)=><a>{title}</a>
+            render:(title)=><b>{title}</b>
         },
         {
         title: '角色名称',

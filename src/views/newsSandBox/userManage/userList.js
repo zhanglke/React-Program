@@ -17,15 +17,15 @@ function UserList(props) {
     const [current,setCurrent] = useState(null)
 
     const {roleId,region} = JSON.parse(localStorage.getItem("token"))
-    const roleObj = {
-        "7":"superAdmin",
-        "9":"regionEditor"
-    }
+
     useEffect(()=>{
 
         axios.get("http://localhost:8000/users?_expand=role").then(res=>{
             const list = res.data
-
+            const roleObj = {
+                "7":"superAdmin",
+                "9":"regionEditor"
+            }
             setDataSource(roleId===7?list:[
                 // ...list.filter(item=>item.username===username),
                 ...list.filter(item=>item.region===region&&item.roleId&&roleObj[item.roleId]==="regionEditor")

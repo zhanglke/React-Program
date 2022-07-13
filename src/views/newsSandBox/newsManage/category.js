@@ -10,7 +10,7 @@ const { confirm } = Modal;
 function Category(props) {
     const [dataSource,setDataSource] = useState([])
     useEffect(()=>{
-        axios.get("http://192.168.3.8:8000/categories").then(res=>{
+        axios.get("http://localhost:8000/categories").then(res=>{
             //console.log(123,res.data)
             setDataSource(res.data)
         })

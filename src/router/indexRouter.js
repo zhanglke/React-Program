@@ -18,6 +18,8 @@ import Audit from '../views/newsSandBox/auditManage/audit';
 import Category from '../views/newsSandBox/newsManage/category';
 import Unpublish from '../views/newsSandBox/publish/unpublish';
 import Sunset from '../views/newsSandBox/publish/sunset';
+import News from '../views/news/news';
+import Details from '../views/news/details';
 //import { Spin } from 'antd';
 const localRouteMap = {
     "/home":<Home/>,
@@ -88,7 +90,8 @@ function IndexRouter(props) {
             
             <Routes>
                 <Route path='/login' element={<Login/>}></Route>
-
+                <Route path='/news' element={<News/>}></Route>
+                <Route path='/details/:id' element={<Details/>}></Route>
                 <Route path='/' element={<AuthComponent>
                         <NewsSandBox/>
                     </AuthComponent>

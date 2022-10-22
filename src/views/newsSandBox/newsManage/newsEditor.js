@@ -25,7 +25,7 @@ function NewsEditor(props) {
     }
 
     return (
-        <div className="editor" style={{background:"red"}} onBlur={()=>{
+        <div className="editor" style={{background:"white"}} onBlur={()=>{
             //console.log(draftToHtml(convertToRaw(state.getCurrentContent())))
             props.getContent(draftToHtml(convertToRaw(state.getCurrentContent())))
         }}>

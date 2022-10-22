@@ -270,51 +270,11 @@
       "default": false,
       "region": "南极",
       "roleId": 9
-    },
-    {
-      "id": 3,
-      "key": 3,
-      "username": "zaijian",
-      "password": 123456,
-      "roleState": true,
-      "default": false,
-      "region": "南极",
-      "roleId": 9
-    },
-    {
-      "id": 4,
-      "key": 4,
-      "username": "00",
-      "password": 123456,
-      "roleState": true,
-      "default": false,
-      "region": "",
-      "roleId": 7
-    },
-    {
-      "username": "1",
-      "password": "123",
-      "region": "南极",
-      "roleId": 9,
-      "roleState": true,
-      "default": false,
-      "key": "8865b072-6350-4bd0-874b-0820c956fd54",
-      "id": 5
-    },
-    {
-      "username": "yanghong",
-      "password": "123456",
-      "region": "南极",
-      "roleId": 9,
-      "roleState": true,
-      "default": false,
-      "key": "7147b526-e4f8-4d86-bac4-4ca63114868e",
-      "id": 6
     }
   ],
   "news": [
     {
-      "title": "已通过待发布",
+      "title": "这是一篇时事新闻",
       "categoryId": 1,
       "content": "<span>你好新闻</span>",
       "region": "全球",
@@ -329,7 +289,7 @@
       "publishTime": 1657692056734
     },
     {
-      "title": "未通过未发布",
+      "title": "科学技术类新闻1号",
       "categoryId": 3,
       "content": "<p>1235654321</p>\n",
       "region": "全球",
@@ -344,7 +304,7 @@
       "id": 2
     },
     {
-      "title": "已通过未发布",
+      "title": "科学技术类新闻",
       "categoryId": 3,
       "content": "<p>1235654321</p>\n",
       "region": "全球",
@@ -360,7 +320,7 @@
       "publishTime": 1657692071718
     },
     {
-      "title": "已通过未发布",
+      "title": "科学技术类新闻2号",
       "categoryId": 3,
       "content": "<p>1235654321</p>\n",
       "region": "全球",
@@ -376,7 +336,7 @@
       "publishTime": 1657692088054
     },
     {
-      "title": "未通过未发布",
+      "title": "科学技术突破发展",
       "categoryId": 3,
       "content": "<p>15654321</p>\n",
       "region": "全球",
@@ -391,7 +351,7 @@
       "id": 5
     },
     {
-      "title": "已通过已下线",
+      "title": "科学技术类新闻5号",
       "categoryId": 3,
       "content": "<p>15656456454321</p>\n",
       "region": "全球",
@@ -406,7 +366,7 @@
       "id": 6
     },
     {
-      "title": "审核中未发布",
+      "title": "科学技术类新闻3号",
       "categoryId": 3,
       "content": "<p>15656456454321</p>\n",
       "region": "全球",
@@ -422,7 +382,7 @@
       "publishTime": 1657692145247
     },
     {
-      "title": "已通过已发布",
+      "title": "科学技术类新闻4号",
       "categoryId": 3,
       "content": "<p>15656456454321</p>\n",
       "region": "全球",
@@ -437,22 +397,7 @@
       "id": 8
     },
     {
-      "title": "6.10新闻",
-      "categoryId": 1,
-      "content": "<p>dhahdoaodiahodaoihoaihfoafa</p>\n",
-      "region": "全球",
-      "author": "admin",
-      "roleId": 7,
-      "auditState": 3,
-      "publishState": 0,
-      "createTime": 1654790848486,
-      "star": 0,
-      "view": 0,
-      "key": "ce3ea29f-a3c4-41aa-949f-16530087a8ec",
-      "id": 9
-    },
-    {
-      "title": "123",
+      "title": "这是一篇经济类新闻",
       "categoryId": 2,
       "content": "<p>15454546556654</p>\n",
       "region": "全球",
@@ -467,84 +412,20 @@
       "id": 10
     },
     {
-      "title": "44444",
-      "categoryId": 1,
-      "content": "<p>nihao&nbsp;</p>\n",
+      "title": "新的经济类新闻",
+      "categoryId": 2,
+      "content": "<p>这是一篇新的经济类新闻。</p>\n",
       "region": "全球",
       "author": "admin",
       "roleId": 7,
       "auditState": 2,
       "publishState": 2,
-      "createTime": 1657692041126,
-      "star": 9,
-      "view": 51,
-      "key": "2f70afbc-3a48-455b-95c6-02acf151bb15",
+      "createTime": 1666425116126,
+      "star": 0,
+      "view": 0,
+      "key": "a455ae7f-f33a-4b5d-8d95-95ddcf01ad2f",
       "id": 11,
-      "publishTime": 1657692124460
-    },
-    {
-      "title": "999999",
-      "categoryId": 2,
-      "content": "<p>9999999999</p>\n",
-      "region": "全球",
-      "author": "admin",
-      "roleId": 7,
-      "auditState": 2,
-      "publishState": 2,
-      "createTime": 1657692103126,
-      "star": 0,
-      "view": 0,
-      "key": "75ae9658-e089-4e9e-a55c-e3c476b5b44b",
-      "id": 12,
-      "publishTime": 1657692131751
-    },
-    {
-      "title": "admin",
-      "categoryId": 2,
-      "content": "<p>admin</p>\n",
-      "region": "全球",
-      "author": "admin",
-      "roleId": 7,
-      "auditState": 2,
-      "publishState": 2,
-      "createTime": 1657695251344,
-      "star": 0,
-      "view": 0,
-      "key": "a9da4db6-f41b-469d-b6f2-aff31c403674",
-      "id": 13,
-      "publishTime": 1657695271246
-    },
-    {
-      "title": "yang",
-      "categoryId": 2,
-      "content": "<p>0</p>\n",
-      "region": "南极",
-      "author": "yanghong",
-      "roleId": 9,
-      "auditState": 2,
-      "publishState": 2,
-      "createTime": 1657696112909,
-      "star": 0,
-      "view": 0,
-      "key": "ea96e216-e864-4bbb-9f16-673ba549c39d",
-      "id": 14,
-      "publishTime": 1657696336894
-    },
-    {
-      "title": "lll",
-      "categoryId": 2,
-      "content": "<p>123</p>\n",
-      "region": "南极",
-      "author": "yanghong",
-      "roleId": 9,
-      "auditState": 2,
-      "publishState": 2,
-      "createTime": 1657696365415,
-      "star": 0,
-      "view": 0,
-      "key": "62c0338e-c296-4805-bd67-75d7908eb77c",
-      "id": 15,
-      "publishTime": 1657696548998
+      "publishTime": 1666425317823
     }
   ]
 }

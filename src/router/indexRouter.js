@@ -8,6 +8,7 @@ import RightList from '../views/newsSandBox/rightManage/rightList';
 import RoleList from '../views/newsSandBox/rightManage/roleList';
 import UserList from '../views/newsSandBox/userManage/userList';
 import axios from 'axios';
+import Register from '../views/login/register';
 import NewsWrite from '../views/newsSandBox/newsManage/newsWrite';
 import Draft from '../views/newsSandBox/newsManage/draft';
 import NewsPreview from '../views/newsSandBox/newsManage/newsPreview';
@@ -90,6 +91,7 @@ function IndexRouter(props) {
             
             <Routes>
                 <Route path='/login' element={<Login/>}></Route>
+                <Route path='/register' element={<Register/>}></Route>
                 <Route path='/news' element={<News/>}></Route>
                 <Route path='/details/:id' element={<Details/>}></Route>
                 <Route path='/' element={<AuthComponent>

@@ -101,7 +101,7 @@ function AuditList(props) {
     }
     return (
         <div>
-            AuditList
+            {/* AuditList */}
             <Table rowKey={item=>item.id} dataSource={dataSource} columns={columns} pagination={{pageSize:5}} />
 
         </div>

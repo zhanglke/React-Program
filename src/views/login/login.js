@@ -39,7 +39,7 @@ function Login(props) {
 
     return (
         <div style={{height:"100%"}} > 
-            <MyParticles/>
+            {/* <MyParticles/> */}
             <div className='formContainer'>
                 
                 <div className='loginTitle'>系统</div>

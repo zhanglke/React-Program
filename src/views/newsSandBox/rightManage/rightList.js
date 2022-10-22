@@ -141,7 +141,7 @@ function RightList(props) {
     
     return (
         <div>
-            RightList
+            
             <Table  dataSource={dataSource} columns={columns} pagination={{pageSize:5}} />
 
 

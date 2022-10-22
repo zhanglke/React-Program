@@ -38,6 +38,7 @@ function SideMenu(props) {
     const renderMenu = (menuList) =>{
         return(
             menuList.map(item=>{
+                console.log(item)
                 if(item.children?.length>0 && checkPermission(item)){
                     //console.log(item)
                     return <SubMenu key={item.id} title={item.title}>{renderMenu(item.children)}</SubMenu>

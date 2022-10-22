@@ -172,7 +172,7 @@ function Category(props) {
     
     return (
         <div>
-            新闻分类
+            
             <Table rowKey={item=>item.id} dataSource={dataSource} 
             columns={columns} pagination={{pageSize:5}} 
             components={{

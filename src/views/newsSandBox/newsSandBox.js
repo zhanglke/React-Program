@@ -7,7 +7,7 @@ import TopHeader from '../../components/sandBox/topHeader';
 
 import { Layout } from 'antd';
 import { Content } from 'antd/lib/layout/layout';
-import './newSandBox.css'
+import './newsSandBox.css'
 import { Spin } from 'antd';
 import { connect } from 'react-redux';
 function NewsSandBox(props) {
@@ -28,7 +28,7 @@ function NewsSandBox(props) {
                     overflow:"auto"
                     }}
                 >
-                    Content内容区域
+                    {/* Content内容区域 */}
                     <Outlet></Outlet>
                 </Content>
                 </Spin>

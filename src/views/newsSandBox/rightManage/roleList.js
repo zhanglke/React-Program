@@ -124,7 +124,7 @@ function RoleList(props) {
 
     return (
         <div>
-            RoleList
+            
             <Table  dataSource={dataSource} columns={columns} pagination={{pageSize:5}} />
 
             <Modal title="权限分配" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
